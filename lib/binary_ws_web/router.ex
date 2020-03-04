@@ -19,6 +19,8 @@ defmodule BinaryWsWeb.Router do
     pipe_through :browser
 
     live "/", CounterLive
+
+    live "/users", UserLive.Index
   end
 
   # Other scopes may use custom stacks.
